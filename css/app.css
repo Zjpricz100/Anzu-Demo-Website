@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+@font-face {
+    font-family: "Awesome Journey";
+    src: url(/assets/fonts/AweSomE\ JouRneY.otf);
+}
+
+:root {
+    --primary-color: rgba(0, 0, 0, 0.626);
+    --secondary-color: #c64b3c;
+    --custom-white: rgb(234, 234, 234);
+    --font-family: "Awesome Journey", "Julee";
+    --hover-color: #f6aa1c;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    font-weight: 100;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    margin-top: 60px;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    font-weight: 500;
+    font-size: large;
+}
+
+nav h1 {
+    color: var(--custom-white);
+}
+
+nav img {
+    width: 5%;
+    height: 5%;
+}
+
+nav a {
+    transition: 0.3s;
+    color: var(--custom-white)
+}
+
+nav a:hover {
+    color: var(--hover-color);
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/front_chicken.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: var(--custom-white);
+}
+
+.hero a {
+    font-size: 2em;
+}
+
+.hero .btn {
+    display: block;
+    width: 200px;
+    border: 1.5px solid var(--custom-white);
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--custom-white);
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 20px;
+}
+
+.hero .btn:hover {
+    transition: 0.5s;
+    background-color: var(--secondary-color);
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.right_about {
+    width: 40%;
+    height: 50%;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.right_about img {
+    width: 50%;
+    height: 20%;
+    margin-left: 5em;
+}
+
+.left_about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--secondary-color);
+    width: 35%;
+    height: 60%;
+}
+
+.left_about h1 {
+    margin-top: 2.5em;
+    margin-left: 2.5em;
+    margin-bottom: 1.5em;
+    font-size: xx-large;
+}
+
+.left_about p {
+    margin-left: 5em;
+    margin-bottom:2.5em;
+    font-size: 25px;
+    text-align: center;
+}
+
+.menu {
+    background-color: #000814;
+    background-size: cover;
+}
+
+.menu-heading {
+    display: flex;
+    margin-top: 5em;
+    margin-bottom: 0.5em;
+    justify-content: center;
+}
+
+.menu-heading h1 {
+    font-size: xx-large;
+    color: var(--custom-white);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    margin: 5% 5%;
+    margin-top: 2em;
+    gap: 100px;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.gallery__item--6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 9;
+}
+
