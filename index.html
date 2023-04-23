@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/app.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>ANZU</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQTWD9vX06yeNTBSX2bCMt6SMQWXygx3A"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
     <nav>
-        <h1>ANZU | KARAGE FACTORY</h1>
+        <h1 id="test">ANZU | KARAGE FACTORY</h1>
         <ul class="navigation">
             <li><a href="#about">About the Business</a></li>
             <li><a href="#location">Find us</a></li>
@@ -31,7 +32,7 @@
 
     <section class="about" id="about">
         <div class="left_about">
-            <h1>Casual, Delicious, Karage</h1>
+            <h1 id="testing">Casual, Delicious, Karage</h1>
             <p>
                 Looking for a laid-back spot to indulge in some mouth-watering Japanese karage in LA?
             </p>
@@ -56,14 +57,36 @@
 
         <div class="location_info">
             <h1>Our Location</h1>
-            <h2> We are off Lagrange in Sawtelle, Los Angeles</h2>
+            <h2> 1270 La Grange Ave, Los Angeles, CA 90025</h2>
+            <ul>
+                <li>Sunday 11:30 - 3:00 PM, 5:30 - 9:00 PM</li>
+                <li>Monday 11:30 - 3:00 PM, 5:30 - 9:00 PM</li>
+                <li>Tuesday 11:30 - 3:00 PM, 5:30 - 9:00 PM</li>
+                <li>Wednesday 11:30 - 3:00 PM, 5:30 - 9:00 PM</li>
+                <li>Thursday 11:30 - 3:00 PM, 5:30 - 9:00 PM</li>
+                <li>Friday 11:30 - 3:00 PM, 5:30 - 9:00 PM</li>
+                <li>Saturday 11:30 - 3:00 PM, 5:30 - 9:00 PM</li>
+            </ul>
             <h2>Come visit us soon!</h2>
+            <div class="bonus" id="bonus_button">
+                <button type="submit" class="btn" n>Why Anzu?</button>
+            </div>
         </div>
         <div class="map">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13224.440143251639!2d-118.443335!3d34.0410484!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb7458491b17%3A0x1aa96e8f507eeebc!2sAnzu!5e0!3m2!1sen!2sus!4v1682195985919!5m2!1sen!2sus"
-                width="800" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                width="800" height="800" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="popup" id="popup">
+            <h1>Why did I choose Anzu Karage Factory?</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus non totam iusto soluta laborum,
+                ipsam quibusdam veniam error? Cumque, maxime repudiandae fuga deserunt dolorem soluta. Placeat officia
+                esse vero ad.
+            </p>
+            <button type="button" id="return_button">Thanks for letting me know!</button>
         </div>
 
     </section>
@@ -97,7 +120,8 @@
         -->
 
 
-
+    <script src="/js/app.js"></script>
 </body>
+
 
 </html>

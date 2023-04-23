@@ -288,16 +288,84 @@ nav ul {
 }
 
 .location_info h1 {
-    margin-bottom: 2em;
+    margin-bottom: 0em;
     font-size: 60px;
     border-bottom: 5px solid var(--custom-white);
 }
 
 .location_info h2 {
-    margin-top: 2em;
+    margin-top: 0.5em;
     width: 65%;
     height: 60%;
     text-align: center;
     font-family: var(--secondary-font-family);
     font-size: 40px;
+    margin-bottom: 1em;
+}
+
+.location_info ul {
+    font-family: var(--secondary-font-family);
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.location_info li {
+    padding-bottom: 20px;
+}
+
+.bonus button {
+    border: 5px solid var(--custom-white);
+    padding: 0.25em;
+    font-size: 45px;
+    font-family: var(--font-family);
+    color: var(--custom-white);
+    background-color: transparent
+}
+
+.bonus button:hover {
+    transition: 0.3s;
+    color: #f6aa1c;
+}
+
+.popup {
+    width: 800px;
+    height: 800px;
+    background: #fff;
+    border-radius: 150px;
+    position: absolute;
+    top: 270%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    background-color: white;
+    color: var(--secondary-color);
+    font-family: var(--secondary-font-family);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+    opacity: 0;
+}
+
+.popup h1 {
+    font-weight: 900;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+.popup p {
+    font-size: 25px;
+}
+
+.popup button {
+    background-color: #c64b3c;
+    color: var(--custom-white);
+    font-family: var(--secondary-font-family);
+    border: 5px solid var(--custom-white);
+    padding: 0.25em;
+    font-size: 35px
 }
