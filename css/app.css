@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+
 @font-face {
     font-family: "Awesome Journey";
     src: url(/assets/fonts/AweSomE\ JouRneY.otf);
 }
+
+@font-face {
+    font-family: "TT Norms Std Condensed";
+    src: url(/assets/fonts/TTNormsStdCond-Regular.ttf);
+}
+
 
 :root {
     --primary-color: rgba(0, 0, 0, 0.626);
     --secondary-color: #c64b3c;
     --custom-white: rgb(234, 234, 234);
     --font-family: "Awesome Journey", "Julee";
+    --secondary-font-family: "TT Norms Std Condensed", "Sans-serif";
     --hover-color: #f6aa1c;
 }
 
@@ -24,7 +32,7 @@ p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 ul {
@@ -128,11 +136,11 @@ nav ul {
 .about {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .right_about {
-    width: 40%;
+    width: 50%;
     height: 50%;
     margin-top: 5em;
     margin-bottom: 5em;
@@ -143,9 +151,14 @@ nav ul {
 }
 
 .right_about img {
-    width: 50%;
+    width: 45%;
     height: 20%;
     margin-left: 5em;
+    margin-bottom: 5em;
+}
+
+.right_about img:nth-of-type(2) {
+    margin-bottom: 0;
 }
 
 .left_about {
@@ -154,7 +167,7 @@ nav ul {
     justify-content: flex-start;
     align-items: center;
     color: var(--secondary-color);
-    width: 35%;
+    width: 38%;
     height: 60%;
 }
 
@@ -167,9 +180,11 @@ nav ul {
 
 .left_about p {
     margin-left: 5em;
-    margin-bottom:2.5em;
-    font-size: 25px;
+    margin-bottom: 2.5em;
+    font-size: 28px;
     text-align: center;
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
 }
 
 .menu {
@@ -246,3 +261,40 @@ nav ul {
     grid-row-end: 9;
 }
 
+.locations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #c64b3c;
+}
+
+.map {
+    margin: 3em;
+    border: 20px solid white;
+}
+
+.location_info {
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--custom-white);
+    width: 50%;
+
+}
+
+.location_info h1 {
+    margin-bottom: 2em;
+    font-size: 60px;
+    border-bottom: 5px solid var(--custom-white);
+}
+
+.location_info h2 {
+    margin-top: 2em;
+    width: 65%;
+    height: 60%;
+    text-align: center;
+    font-family: var(--secondary-font-family);
+    font-size: 40px;
+}
