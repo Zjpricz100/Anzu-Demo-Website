@@ -18,15 +18,19 @@
         <ul class="navigation">
             <li><a href="#about">About the Business</a></li>
             <li><a href="#location">Find us</a></li>
-            <li><a href="menu.html">Menu</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            
         </ul>
     </nav>
 
     <section class="hero">
         <div class="hero-inner">
             <h1>The Best Karage in Sawtelle</h1>
-            <a href="menu.html" class="btn">Order Now</a>
+            <div class="center">
+                <button onclick="window.location.href='menu.html'" type="submit"class="btn btn-reverse btn-arrow">
+                  <span>Order Now<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span>
+                </button>
         </div>
     </section>
 
@@ -75,51 +79,65 @@
         <div class="map">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13224.440143251639!2d-118.443335!3d34.0410484!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb7458491b17%3A0x1aa96e8f507eeebc!2sAnzu!5e0!3m2!1sen!2sus!4v1682195985919!5m2!1sen!2sus"
-                width="800" height="800" style="border:0;" allowfullscreen="" loading="lazy"
+                width="700" height="700" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <div class="popup" id="popup">
-            <h1>Why did I choose Anzu Karage Factory?</h1>
+            <h1>Why did I choose Anzu?</h1>
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus non totam iusto soluta laborum,
-                ipsam quibusdam veniam error? Cumque, maxime repudiandae fuga deserunt dolorem soluta. Placeat officia
-                esse vero ad.
+                Anzu is a small, local, authentic karage restauraunt that serves well prices, excellent, and delicious food.
+                I have been going to Anzu for years now as a person who loves trying the diverse range of restauraunts that surround
+                my dream school of UCLA in Sawtelle. 
+            </p>
+            <p>
+                I always want to show my support as much as possible to local spots like this and I chose to make my 
+                project orient around Anzu as I wanted to improve the functionality of their current website, while maintaining
+                the casual and stylish character the restauraunt works hard to maintain.
+            </p>
+            <p>
+                I plan on supporting more businesses like Anzu as I visit LA more and more.
             </p>
             <button type="button" id="return_button">Thanks for letting me know!</button>
         </div>
-
     </section>
 
-    <!---
-    <section class="menu">
-        <div class="menu-heading">
-            <h1>Menu</h1>
+    <section class="contact" id="contact">
+        <h2>Contact Us!</h2>
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/mgebrnav" method="POST">
+              <div class="form-control">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field"
+                  required />
+              </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field"
+                  required />
+              </div>
+              <div class="form-control">
+                <label for="message">Message</label>
+                <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
+                  class="input-field" required></textarea>
+              </div>
+              <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+            </form>
+          </div>
         </div>
-        
-        <section class="gallery" id="menu">
-            <figure class="gallery_item gallery__item--1">
-                <img src="/assets/images/anzu_burger.jpg" class="gallery__img" alt="">
-            </figure>
-            <figure class="gallery_item gallery__item--2">
-                <img src="/assets/images/anzu_curry.jpg" class="gallery__img" alt="">
-            </figure>
-            <figure class="gallery_item gallery__item--3">
-                <img src="/assets/images/anzu_curry_karage.jpg" class="gallery__img" alt="">
-            </figure>
-            <figure class="gallery_item gallery__item--4">
-                <img src="/assets/images/anzu_egg.jpg" class="gallery__img" alt="">
-            </figure>
-            <figure class="gallery_item gallery__item--5">
-                <img src="/assets/images/anzu_chicken_basket.jpg" class="gallery__img" alt="">
-            </figure>_
-            <figure class="gallery_item gallery__item--6">
-                <img src="/assets/images/anzu_currydog.jpg" class="gallery__img" alt="">
-        </section>
-    </section>
-        -->
-
-
+      </section>
+      <div class="socials">
+        <a href="https://www.instagram.com/anzu_la/?hl=en" target="_blank"
+        ><img
+          src="assets/icons/icons8-instagram.svg"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      </div>
+      
+      </body>
     <script src="/js/app.js"></script>
 </body>
 

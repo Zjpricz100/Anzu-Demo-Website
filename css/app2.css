@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+
+@font-face {
+    font-family: "Awesome Journey";
+    src: url(/assets/fonts/AweSomE\ JouRneY.otf);
+}
+
+@font-face {
+    font-family: "TT Norms Std Condensed";
+    src: url(/assets/fonts/TTNormsStdCond-Regular.ttf);
+}
+
+:root {
+    --primary-color: rgba(0, 0, 0, 0.626);
+    --secondary-color: #c64b3c;
+    --custom-white: rgb(234, 234, 234);
+    --font-family: "Awesome Journey", "Julee";
+    --secondary-font-family: "TT Norms Std Condensed", "Sans-serif";
+    --hover-color: #f6aa1c;
+}
+
+html {
+    scroll-behavior: smooth;
+        max-height: 100%;
+        overflow-y: auto; /* Add scrollbar only when needed */
+}
+
+
+.menu_gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_gallery h1 {
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    position: absolute;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    font-family: var(--font-family);
+    color: var(--custom-white);    
+    margin-top: 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 25vw);
+    grid-gap: 1px;
+    width: 80%;
+    height: 80%;
+    margin-top: 5em;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__item {
+    position: relative;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .gallery__item h1 {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+  }
+
+.description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    font-family: var(--secondary-font-family);
+    font-weight: 800;
+    font-size: 15px;
+  }
+  
+  .gallery__item:hover .description {
+    opacity: 1;
+  }
+
+  .menu_notice {
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family);
+  }
+
+  .menu_notice a{
+    color: var(--secondary-color);
+    font-size: 45px;
+    text-decoration: none;
+    border: 5px solid var(--secondary-color);
+    padding: 10px;
+  }
+
+  .menu_notice a:hover {
+    background-color: var(--secondary-color);
+    color: var(--custom-white);
+    transition: 0.6s;
+  }
