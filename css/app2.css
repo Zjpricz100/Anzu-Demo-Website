@@ -101,18 +101,18 @@ html {
     display: flex;
     justify-content: center;
     font-family: var(--font-family);
+    background-color: #c64b3c;
+    padding: 1rem;
   }
 
   .menu_notice a{
-    color: var(--secondary-color);
+    color: var(--custom-white);
     font-size: 45px;
     text-decoration: none;
-    border: 5px solid var(--secondary-color);
-    padding: 10px;
+    
   }
 
   .menu_notice a:hover {
-    background-color: var(--secondary-color);
-    color: var(--custom-white);
+    color:#f6aa1c;
     transition: 0.6s;
   }
